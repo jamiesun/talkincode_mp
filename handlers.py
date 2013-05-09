@@ -14,7 +14,7 @@ from settings import MSG_TYPE_TEXT,MSG_TYPE_LOCATION,MSG_TYPE_IMAGE,\
 
 
 def _simsimi(msg):
-    errstr = u'思考混乱中，无法回答'
+    errstr = u'思考混乱中，无法回答，回复h查看帮助。'
     if not msg:
         return None
     payload = {'text': msg, 'lc': 'ch','key':options.simsimi_key}
@@ -82,7 +82,7 @@ class MainHandler(web.RequestHandler):
         try:
             if self.touser and self.fromuser:
                 reply = sender.reply_text(self.touser, self.fromuser,
-                                               u'程序混乱中，无法回答')
+                                               u'程序混乱中，无法回答，回复h查看帮助。')
                 self.write(reply)
                 return
         except:

@@ -50,7 +50,7 @@ class AI(object):
             if response:
                 break
 
-        return response or u'思考混乱，无法回答'
+        return response or u'思考混乱，无法回答，回复h查看帮助。'
 
 
 AI.load_plugins()
