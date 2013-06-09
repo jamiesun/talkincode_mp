@@ -1,3 +1,3 @@
 #coding=utf-8
 
-__all__ = ['help','ip', 'v2ex', 'oschina', 'feed','subscribe']
+__all__ = ['help','tucao','ip', 'v2ex', 'oschina', 'feed','subscribe']

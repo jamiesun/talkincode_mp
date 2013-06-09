@@ -16,7 +16,7 @@ MSG_TYPE_NEWS = u'news'
 
 
 def init():
-    define('debug', type=bool, default=True, help='application in debug mode?')
+    define('debug', type=bool, default=False, help='application in debug mode?')
     define('port', type=int, default=8000,help='the port application listen to')
     define('token', type=str, default='talk1979', help='your wechat token')
     define('username', type=str, default='', help='your wechat username')

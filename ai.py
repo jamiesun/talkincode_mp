@@ -46,6 +46,8 @@ class AI(object):
                     response = plugin.respond(data, msg, self)
             except:
                 logging.warning('Plugin %s failed to respond.' % plugin.__name__)
+                import traceback
+                traceback.print_exc()
                 continue
             if response:
                 break

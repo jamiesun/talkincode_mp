@@ -17,5 +17,6 @@ def respond(data, msg=None, bot=None):
 >> h  -- 显示帮助文档\n
 >> oschina  -- 获取开源中国网站最新资讯\n
 >> x.x.x.x  -- 输入ip地址可查询归属地\n
+>> tc  -- 输入tc(空格)(吐槽文本)或直接tc查看最近吐槽\n
 >> 更多功能完善中，敬请期待...
 '''

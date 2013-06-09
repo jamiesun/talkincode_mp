@@ -36,7 +36,7 @@ def main():
     IOLoop.instance().start()
 
 if __name__ == '__main__':
-    try:
+    try:        
         main()
     except (EOFError, KeyboardInterrupt):
         print("\nExiting application")
